@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Core.DataAcces
 {
     //generic constraint
     //class:referans tip olabilir
@@ -20,6 +20,7 @@ namespace DataAccess.Abstract
         void Update(T entity);
         void Delete(T entity);
 
+        //Core katmanı diğer katmanları referans almaz. Alırsa o katmana bağımlısın demektir. 
       
     }
 }
